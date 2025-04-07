@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site HTML</title>
+</head>
+<body>
+    <h1>Turismo</h1>
+    
+     <h2>Europa</h2> 
+
+    <p>Paris, Italia, Portugal </p>
+
+    <p> A partir de 8.000, oportuniudade unica<br> Aproveite</p>
+
+    <hr> Linha na horizontal 
+    
+    <h3>imagens</h3> 
+
+    <!-- a tag precisa utilizar o atributo src "" -->
+    <!-- O SCR recebe o atrbuto"" -->
+    
+    <img title= "paisagem"  width="300px" src="https://cdn.pixabay.com/photo/2024/12/28/05/28/sydney-9295243_1280.jpg" alt="Foto de paisagem"> 
+<!-- Ctrl + ; == comentario-->
+
+    <hr>
+    ]
+    <h3>Listas</h3>
+
+    <h4>Lista Não Ordenada (unordered list)</h4> 
+
+    <ul>
+        <li>item A</li>
+        <li>item B</li>
+        <li>item C</li>
+
+    </ul>
+
+    <!-- ul>li{item $}*5 Consegue colocar itens seguidos, a quantidade de vezes que  -->
+    
+    <h4>Lista ordenada (ordered list) </h4>
+    
+    <ol start="1" type="i" reversed>
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+        <li>Item D</li>
+    </ol>
+    
+<!-- li > cria lista não ordernada-->
+<!-- ol > lista ordenada --> 
+
+<hr>
+
+    <h3>Tabelas</h3>
+     
+    <table>
+        <!-- estrutura da tabela -->
+        <tr>
+            <th>codigo</th>
+            <th>produto</th>
+            <th>valor</th>
+        </tr>
+        <!-- Dados da tabela -->
+        <tr>
+            <th>004</th>
+            <th>Smartphone S23</th>
+            <th>3.000</th>
+        </tr>
+        <tr>
+            <th>005</th>
+            <th>TV</th>
+            <th>10.000</th>
+        </tr>
+    </table>
+
+    <!-- eslilização do estilo -->
+    <style>
+       
+       table, td, th{
+            border: solid 1px blue;
+            border-collapse: collapse;
+          }
+
+    </style>
+
+    <hr>
+
+    <h3>inputs</h3>
+
+    <form> 
+        <h2>Cadrastro do Usuario</h2>
+
+        <!-- input com label (rotulo) -->
+
+        <label for="name">Nome:</label>
+        <input type="text" id="name" placeholder="digite seu nome" name="nome">
+        <br><br>
+        <!-- input sem rotulo -->
+
+        <input type="text" placeholder="Nome">
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+        </div>
+        <div>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="nome" required>
+        </div>
+        <div>
+            <label for="idade">Idade:</label>
+            <!-- limitando a data -->
+            <input type="number" id="idade" min="1" max="10">
+            <!-- o atributo "min" e "max" limitam os valores -->
+        </div>
+        <div>
+            <label for="Nascimento">Data de nascimento:</label>
+            <input type="date" id="nascimento" Min="1999-12-31">
+        </div>
+        <h4> Elemento escondito (hidden)</h4>
+        <input type="text" id="chave" value="5sd678m99a42">
+
+        <h4>Checkbox</h4>
+        <label for="CNH"> Tem CNH?</label>
+        <input type="checkbox" id="CNH">
+
+        <h4>Radio button</h4>
+        <label for="genero">Feminino</label>
+        <input type="radio" id="feminino" name="genero" valeu="Feminino">
+
+        <label for="genero">Masculino</label>
+        <input type="radio" id="masculino" name="genero" valeu=" feminino">
+
+        <label for="genero">Outro</label>
+        <input type="radio" id="outro" name="genero" valeu="outro">
+        
+        <h4>select</h4>
+        <label for="regiao"> Região </label>
+        <select name="regiao" id="regiao"></select>
+        <option value="nordeste"> Nordeste </option>
+        <option value="norte"> Norte </option>
+
+
+        <button>Enviar</button>
+
+        
+
+
+
+
+
+
+        
+    </Form>
+
+    
+
+    
+
+</body>
+</html>
